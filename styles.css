@@ -1,0 +1,219 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Example background images for each page */
+.index-page {
+    background-image: url('Picture/hill\ view.jpg');
+    background-size: cover;
+}
+
+.about-page { 
+    background-image: url('Picture/pixels.jpg');
+    background-size: cover;
+}
+
+.education-page {
+    background-image: url('Picture/play.jpg');
+    background-size: cover;
+}
+
+.skills-page {
+    background-image: url('Picture/word.jpg');
+    background-size: cover;
+}
+
+.contact-page {
+    background-image: url('Picture/abstract.jpg');
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px; /* Adjust as per your design */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* Example background color for container */
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-right: 20%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.contact-info h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.background-story h2 {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.education {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.school {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.school img {
+    width: 360px; /* Adjust the size as needed */
+    height: auto;
+    margin: 0 auto 20px; /* Add auto for left and right margins to center horizontally */
+    border-radius: 10%;
+    display: block; /* Make the image a block element */
+}
+
+
+.school-info {
+    max-width: 600px;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #00839a;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    right: -15%; /* Start off-screen */
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.sidebar:hover {
+    transform: translateX(-80%); /* Move sidebar into view */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    opacity: 0; /* Initially hide list items */
+    transition: opacity 0.3s ease; /* Fade-in effect */
+}
+
+.sidebar:hover ul li {
+    opacity: 1; /* Show list items on hover */
+}
+
+.sidebar ul li a {
+    display: block; /* Ensure links are block-level */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding for better click/tap area */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.sidebar ul li a:hover {
+    background-color: #00556b; /* Darker background color on hover */
+    text-decoration: underline; /* Optional: Underline on hover */
+}
+
+.logo {
+    width: 150px; /* Adjust the width to your liking */
+    height: auto;
+    margin: 10px; /* Add some margin to create space around the logo */
+    vertical-align: middle; /* Center the logo vertically */
+}
+
+
+.photos img {
+    float: left;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.profile-img {
+    display: block; /* Ensure image behaves as a block element */
+    margin: 0 auto 20px; /* Center image horizontally with bottom margin */
+    max-width: 180px; /* Adjust the maximum width as per your design */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0%; /* Rounded corners for circular appearance */
+}
+
+
+
+
+/* video */
+
+.video-section {
+    text-align: center; /* Center align content */
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.video-frame {
+    border: 2px solid #ccc; /* Gray border around the video */
+    padding: 10px; /* Padding inside the frame */
+    max-width: 80%; /* Ensure video frame doesn't exceed container width */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for subtle depth */
+    margin: 0 auto; /* Center the video frame horizontally */
+}
+
+.video-frame video {
+    width: 100%; /* Make the video fill its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* footer */
+
+footer {
+    background-color: #00839a; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding inside the footer */
+    text-align: center; /* Center align text */
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+}
+
+.footer .bottom {
+    font-size: 14px; /* Adjust font size */
+}
+
+.header-image {
+    width: 25%; /* Adjust width to fill the container */
+    max-width: 100%; /* Ensure image does not exceed its natural size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image behaves as a block element */
+    margin: 0 auto 20px; /* Center horizontally and add space below the image */
+}
+
